@@ -1,0 +1,30 @@
+var Money = function(){};
+
+Money.prototype.getCurrencyCode = function(){};
+Money.prototype.add = function(){};
+Money.prototype.equals = function(){};
+Money.prototype.toString = function(){};
+Money.prototype.hashCode = function(){};
+Money.prototype.compareTo = function(){};
+Money.prototype.valueOf = function(){};
+Money.prototype.getValue = function(){};
+Money.prototype.isAvailable = function(){};
+Money.prototype.multiply = function(){};
+Money.prototype.subtract = function(){};
+Money.prototype.getValueOrNull = function(){};
+Money.prorate = function(){};
+Money.prototype.isOfSameCurrency = function(){};
+Money.prototype.divide = function(){};
+Money.prototype.addPercent = function(){};
+Money.prototype.subtractPercent = function(){};
+Money.prototype.percentOf = function(){};
+Money.prototype.percentLessThan = function(){};
+Money.prototype.addRate = function(){};
+Money.prototype.subtractRate = function(){};
+Money.prototype.toNumberString = function(){};
+Money.prototype.toFormattedString = function(){};
+Money.prototype.currencyCode=null;
+Money.prototype.value=null;
+Money.prototype.valueOrNull=null;
+
+module.exports = Money;

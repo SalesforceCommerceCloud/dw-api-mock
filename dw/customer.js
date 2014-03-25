@@ -1,0 +1,17 @@
+exports.AddressBook = require('./customer/AddressBook.js');
+exports.Credentials = require('./customer/Credentials.js');
+exports.Customer = require('./customer/Customer.js');
+exports.CustomerActiveData = require('./customer/CustomerActiveData.js');
+exports.CustomerAddress = require('./customer/CustomerAddress.js');
+exports.CustomerGroup = require('./customer/CustomerGroup.js');
+exports.CustomerMgr = require('./customer/CustomerMgr.js');
+exports.CustomerPaymentInstrument = require('./customer/CustomerPaymentInstrument.js');
+exports.CustomerStatusCodes = require('./customer/CustomerStatusCodes.js');
+exports.EncryptedObject = require('./customer/EncryptedObject.js');
+exports.OrderHistory = require('./customer/OrderHistory.js');
+exports.ProductList = require('./customer/ProductList.js');
+exports.ProductListItem = require('./customer/ProductListItem.js');
+exports.ProductListItemPurchase = require('./customer/ProductListItemPurchase.js');
+exports.ProductListMgr = require('./customer/ProductListMgr.js');
+exports.ProductListRegistrant = require('./customer/ProductListRegistrant.js');
+exports.Profile = require('./customer/Profile.js');

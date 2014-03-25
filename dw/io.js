@@ -1,0 +1,10 @@
+exports.CSVStreamReader = require('./io/CSVStreamReader.js');
+exports.CSVStreamWriter = require('./io/CSVStreamWriter.js');
+exports.File = require('./io/File.js');
+exports.FileReader = require('./io/FileReader.js');
+exports.FileWriter = require('./io/FileWriter.js');
+exports.RandomAccessFileReader = require('./io/RandomAccessFileReader.js');
+exports.XMLIndentingStreamWriter = require('./io/XMLIndentingStreamWriter.js');
+exports.XMLStreamConstants = require('./io/XMLStreamConstants.js');
+exports.XMLStreamReader = require('./io/XMLStreamReader.js');
+exports.XMLStreamWriter = require('./io/XMLStreamWriter.js');

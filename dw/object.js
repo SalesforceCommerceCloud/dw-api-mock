@@ -1,0 +1,12 @@
+exports.ActiveData = require('./object/ActiveData.js');
+exports.CustomAttributes = require('./object/CustomAttributes.js');
+exports.CustomObject = require('./object/CustomObject.js');
+exports.CustomObjectMgr = require('./object/CustomObjectMgr.js');
+exports.ExtensibleObject = require('./object/ExtensibleObject.js');
+exports.Note = require('./object/Note.js');
+exports.ObjectAttributeDefinition = require('./object/ObjectAttributeDefinition.js');
+exports.ObjectAttributeGroup = require('./object/ObjectAttributeGroup.js');
+exports.ObjectAttributeValueDefinition = require('./object/ObjectAttributeValueDefinition.js');
+exports.ObjectTypeDefinition = require('./object/ObjectTypeDefinition.js');
+exports.PersistentObject = require('./object/PersistentObject.js');
+exports.SystemObjectMgr = require('./object/SystemObjectMgr.js');
