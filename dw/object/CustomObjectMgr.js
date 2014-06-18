@@ -5,7 +5,7 @@ CustomObjectMgr.removea = function(){};
 CustomObjectMgr.describe = function(){};
 CustomObjectMgr.createCustomObject = function(){};
 CustomObjectMgr.getCustomObject = function(type, id){
-	console.log('CO query for '+type+' with ID '+id);
+	//console.log('CO query for '+type+' with ID '+id);
 
 	var CoClass = require('./CustomObject'); 
 	var customObject = new CoClass();
