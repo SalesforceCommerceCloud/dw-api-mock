@@ -5,7 +5,11 @@ File.prototype.getName = function(){};
 File.prototype.length = function(){};
 File.prototype.zip = function(){};
 File.prototype.list = function(){};
-File.prototype.exists = function(){};
+
+File.prototype.exists = function() {
+	return false;
+};
+
 File.prototype.getPath = function(){};
 File.prototype.createNewFile = function(){};
 File.prototype.isDirectory = function(){};
@@ -26,5 +30,8 @@ File.prototype.path=null;
 File.prototype.rootDirectory=null;
 File.prototype.rootDirectoryType=null;
 File.prototype.fullPath=null;
+
+File.CATALOG = '/CATALOGS/pim-catalog';
+File.SEPARATOR = '/';
 
 module.exports = File;

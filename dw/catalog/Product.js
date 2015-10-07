@@ -4,11 +4,18 @@ var Product = function(){};
 
 Product.prototype = new _super();
 
-Product.prototype.getName = function(){};
+Product.prototype.getName = function() {
+	return 'Product Name';
+};
+
 Product.prototype.getID = function(){};
 Product.prototype.getVariants = function(){};
 Product.prototype.__id = function(){};
-Product.prototype.getImage = function(){};
+
+Product.prototype.getImage = function(){
+	return new require('../content/MediaFile');	
+};
+
 Product.prototype.getShortDescription = function(){};
 Product.prototype.getThumbnail = function(){};
 Product.prototype.isOnline = function(){};
@@ -55,7 +62,11 @@ Product.prototype.setSearchRank_1 = function(){};
 Product.prototype.setSearchRank_2 = function(){};
 Product.prototype.getEAN = function(){};
 Product.prototype.getUPC = function(){};
-Product.prototype.getBrand = function(){};
+
+Product.prototype.getBrand = function() {
+	return 'Jack & Jones';
+};
+
 Product.prototype.isOptionProduct = function(){};
 Product.prototype.getOptionModel = function(){};
 Product.prototype.isMaster = function(){};
