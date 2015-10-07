@@ -1,8 +1,6 @@
 /**
  *   simple class which generates getters and setters for properties
  */
-
-
 var Bean = function(simpleObject) {
 	var properties = [];
 	for (var property in simpleObject) {
@@ -43,8 +41,7 @@ global.empty = function(obj) {
 
 global.Fault = function() {};
 
-global.response = dw.system.Response;
-
+global.response = new dw.system.Response();
 global.request = {
 	httpParameterMap: {
 		initializeQueryString: function(queryString) {
@@ -80,8 +77,9 @@ global.request = {
 		}
 	}
 };
+global.request.prototype = dw.system.Request;
 
-global.customer = dw.customer.Customer;
+global.customer = new dw.customer.Customer();
 
 global.XML = function(obj) {
 	// allow construction with plain objects to simulate simple XML cases (i.e. without namespaces)
