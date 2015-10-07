@@ -3,11 +3,7 @@ var _super = require('../object/ExtensibleObject');
 var Product = function(){};
 
 Product.prototype = new _super();
-
-Product.prototype.getName = function() {
-	return 'Product Name';
-};
-
+Product.prototype.getName = function() {};
 Product.prototype.getID = function(){};
 Product.prototype.getVariants = function(){};
 Product.prototype.__id = function(){};
