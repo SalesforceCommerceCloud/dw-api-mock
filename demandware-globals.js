@@ -31,7 +31,7 @@ var Bean = function(simpleObject) {
 	return simpleObject;
 };
 
-global.dw = require('./scriptapi.js');
+global.dw = require('./scriptapi.js').dw;
 
 global.empty = function(obj) {
 	if (obj === null || obj === '' || obj === 0 || (typeof (obj) !== 'function' && obj.length !== undefined && obj.length === 0)) {
