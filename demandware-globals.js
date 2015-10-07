@@ -43,9 +43,9 @@ global.empty = function(obj) {
 
 global.Fault = function() {};
 
-global.response = function() {};
+global.response = dw.system.Response;
 
-request = {
+global.request = {
 	httpParameterMap: {
 		initializeQueryString: function(queryString) {
 			var keyValuePairs = queryString.split('&');
@@ -81,7 +81,7 @@ request = {
 	}
 };
 
-global.customer = function() {};
+global.customer = dw.customer.Customer;
 
 global.XML = function(obj) {
 	// allow construction with plain objects to simulate simple XML cases (i.e. without namespaces)
