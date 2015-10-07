@@ -1,8 +1,6 @@
 var ProductMgr = function(){};
 
 ProductMgr.getProduct = function(){
-	var Product = require('dw/catalog/Product')
-	var productInstance = new Product();
 	return new require('./Product');
 };
 

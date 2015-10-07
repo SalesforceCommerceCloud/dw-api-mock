@@ -62,11 +62,7 @@ Product.prototype.setSearchRank_1 = function(){};
 Product.prototype.setSearchRank_2 = function(){};
 Product.prototype.getEAN = function(){};
 Product.prototype.getUPC = function(){};
-
-Product.prototype.getBrand = function() {
-	return 'Jack & Jones';
-};
-
+Product.prototype.getBrand = function() {};
 Product.prototype.isOptionProduct = function(){};
 Product.prototype.getOptionModel = function(){};
 Product.prototype.isMaster = function(){};

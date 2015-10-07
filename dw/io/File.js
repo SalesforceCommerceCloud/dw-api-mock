@@ -31,7 +31,7 @@ File.prototype.rootDirectory=null;
 File.prototype.rootDirectoryType=null;
 File.prototype.fullPath=null;
 
-File.CATALOG = '/CATALOGS/pim-catalog';
+File.CATALOG = '/CATALOGS/catalog';
 File.SEPARATOR = '/';
 
 module.exports = File;

@@ -16,7 +16,7 @@ MediaFile.prototype.getAlt = function() {
 MediaFile.prototype.getUrl = function(){};
 
 MediaFile.prototype.getImageURL = function(transform) {
-	if (transform === null || transform.length === 0) {
+	if (!transform || !transform.length) {
 		return this.getURL();
 	}
 

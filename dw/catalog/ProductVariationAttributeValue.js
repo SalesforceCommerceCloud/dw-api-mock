@@ -13,15 +13,13 @@ ProductVariationAttributeValue.prototype.getImage = function(){
 
 ProductVariationAttributeValue.prototype.getImages = function(){};
 
-ProductVariationAttributeValue.prototype.getDisplayValue = function(){
-	return 'Display Value';
-};
+ProductVariationAttributeValue.prototype.getDisplayValue = function(){};
 
 ProductVariationAttributeValue.prototype.value=null;
 ProductVariationAttributeValue.prototype.ID=null;
 ProductVariationAttributeValue.prototype.description=null;
 ProductVariationAttributeValue.prototype.image=null;
 ProductVariationAttributeValue.prototype.images=null;
-ProductVariationAttributeValue.prototype.displayValue = 'Display Value';
+ProductVariationAttributeValue.prototype.displayValue=null;
 
 module.exports = ProductVariationAttributeValue;
