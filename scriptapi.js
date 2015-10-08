@@ -37375,7 +37375,9 @@ dw.system.Logger.getLogger = function(category) {
  * @return {dw.system.Log} the logger object for the given category.
  * @static
  */
-dw.system.Logger.getLogger = function(fileNamePrefix, category) {};
+dw.system.Logger.getLogger = function(fileNamePrefix, category) {
+	return dw.system.Logger;
+};
 
 /**
  * Returns the root logger object.
