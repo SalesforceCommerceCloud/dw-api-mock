@@ -32,7 +32,7 @@ var Bean = function(simpleObject) {
 global.dw = require('./scriptapi.js').dw;
 
 global.empty = function(obj) {
-	if (obj === null || obj === '' || obj === 0 || (typeof (obj) !== 'function' && obj.length !== undefined && obj.length === 0)) {
+	if (obj === null || obj === undefined || obj === '' || obj === 0 || (typeof (obj) !== 'function' && obj.length !== undefined && obj.length === 0)) {
 		return true;
 	} else {
 		return false;

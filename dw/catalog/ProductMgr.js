@@ -1,6 +1,9 @@
 var ProductMgr = function(){};
 
-ProductMgr.getProduct = function(){};
+ProductMgr.getProduct = function(){
+	return new require('./Product');
+};
+
 ProductMgr.queryAllSiteProducts = function(){};
 ProductMgr.queryProductsInCatalog = function(){};
 ProductMgr.queryAllSiteProductsSorted = function(){};
