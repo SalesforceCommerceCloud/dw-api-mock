@@ -11,14 +11,29 @@ URLUtils.httpWebRoot = function(){};
 URLUtils.httpsWebRoot = function(){};
 URLUtils.httpContinue = function(){};
 URLUtils.httpsContinue = function(){};
-URLUtils.staticURL = function(){};
+
+URLUtils.staticURL = function() {
+	return '/on/demandware.static/relative/url/to/resource';
+};
+
 URLUtils.imageURL = function(){};
 URLUtils.absImage = function(){};
-URLUtils.httpStatic = function(){};
-URLUtils.httpsStatic = function(){};
+
+URLUtils.httpStatic = function() {
+	return 'http://domain/on/demandware.static/absolute/http/url/to/resource';
+};
+
+URLUtils.httpsStatic = function() {
+	return 'https://domain/on/demandware.static/absolute/https/url/to/resource';
+};
+
 URLUtils.httpsImage = function(){};
 URLUtils.httpImage = function(){};
-URLUtils.absStatic = function(){};
+
+URLUtils.absStatic = function() {
+	return 'http://domain/on/demandware.static/absolute/url/to/resource';
+};
+
 URLUtils.sessionRedirect = function(){};
 URLUtils.sessionRedirectHttpOnly = function(){};
 URLUtils.continueURL = function(){};
