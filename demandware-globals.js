@@ -69,7 +69,7 @@ global.request = {
 					value: value,
 					intValue: parseInt(value),
 					stringValue: value,
-					ted: true
+					submitted: true
 				});
 			} else {
 				throw 'Invalid Querystring';
