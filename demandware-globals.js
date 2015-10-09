@@ -69,12 +69,16 @@ global.request = {
 					value: value,
 					intValue: parseInt(value),
 					stringValue: value,
-					ted: true
+					submitted: true
 				});
 			} else {
 				throw 'Invalid Querystring';
 			}
 		}
+	},
+	httpSecure: true,
+	isHttpSecure: function() {
+		return true;
 	}
 };
 global.request.prototype = dw.system.Request;
