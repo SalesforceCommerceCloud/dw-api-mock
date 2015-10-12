@@ -77,8 +77,8 @@ global.request = {
 		},
 
 		destroyParameters: function() {
-			for(var key in this) {
-				if(this.hasOwnProperty(key) && typeof this[key] !== 'function') {
+			for (var key in this) {
+				if (this.hasOwnProperty(key) && typeof this[key] !== 'function') {
 					delete this[key];
 				}
 			}			
