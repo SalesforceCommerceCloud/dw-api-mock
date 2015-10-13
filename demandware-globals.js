@@ -56,6 +56,8 @@ global.request = {
 				keys[i] = new Bean({
 					value: null,
 					stringValue: null,
+					intValue: null,
+					doubleValue: null,
 					submitted: false
 				});
 			}
@@ -68,6 +70,7 @@ global.request = {
 				this[key] = new Bean({
 					value: value,
 					intValue: parseInt(value),
+					doubleValue: parseFloat(value),
 					stringValue: value,
 					submitted: true
 				});
