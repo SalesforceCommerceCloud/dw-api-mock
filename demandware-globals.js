@@ -51,6 +51,17 @@ global.request = {
 			}
 		},
 
+		getParameterMap: function(attrName) {
+			var result = [];
+			for (var key in this) {
+				if (key.indexOf(attrName) === 0) {
+					result.push(this[key]);
+				}
+			}
+
+			return result;
+		},
+
 		setNonSubmittedKeys: function(keys) {
 			for (var i = 0; i < keys.length; i++) {
 				keys[i] = new Bean({
