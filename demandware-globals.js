@@ -51,10 +51,13 @@ global.request = {
 			}
 		},
 
-		getParameterMap: function(attrName) {
+		/**
+		* Returns a sub-map containing all parameters that start with the given prefix.
+		*/
+		getParameterMap: function(prefix) {
 			var result = [];
 			for (var key in this) {
-				if (key.indexOf(attrName) === 0) {
+				if (key.indexOf(prefix) === 0) {
 					result.push(this[key]);
 				}
 			}
