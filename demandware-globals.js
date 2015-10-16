@@ -51,6 +51,20 @@ global.request = {
 			}
 		},
 
+		/**
+		* Returns a sub-map containing all parameters that start with the given prefix.
+		*/
+		getParameterMap: function(prefix) {
+			var result = [];
+			for (var key in this) {
+				if (key.indexOf(prefix) === 0) {
+					result.push(this[key]);
+				}
+			}
+
+			return result;
+		},
+
 		setNonSubmittedKeys: function(keys) {
 			for (var i = 0; i < keys.length; i++) {
 				keys[i] = new Bean({
