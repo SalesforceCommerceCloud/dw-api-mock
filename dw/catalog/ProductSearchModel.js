@@ -1,4 +1,4 @@
-var _super = require('SearchModel');
+var _super = require('./SearchModel');
 
 var ProductSearchModel = function(){};
 
