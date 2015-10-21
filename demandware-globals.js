@@ -42,6 +42,8 @@ global.empty = function(obj) {
 global.Fault = function() {};
 
 global.response = new dw.system.Response();
+global.session = new dw.system.Session();
+
 global.request = {
 	httpParameterMap: {
 		initializeQueryString: function(queryString) {
@@ -77,6 +79,7 @@ global.request = {
 		}
 	},
 	httpSecure: true,
+	httpUserAgent: '',
 	isHttpSecure: function() {
 		return true;
 	}
