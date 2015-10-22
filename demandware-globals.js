@@ -43,6 +43,7 @@ global.Fault = function() {};
 
 global.response = new dw.system.Response();
 global.session = new dw.system.Session();
+global.session.custom = {};
 
 global.request = {
 	httpParameterMap: {
