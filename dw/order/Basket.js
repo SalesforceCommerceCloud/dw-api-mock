@@ -1,4 +1,4 @@
-var _super = require('LineItemCtnr');
+var _super = require('./LineItemCtnr');
 
 var Basket = function(){};
 

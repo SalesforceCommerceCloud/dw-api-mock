@@ -1,4 +1,4 @@
-var _super = require('PaymentInstrument');
+var _super = require('./PaymentInstrument');
 
 var OrderPaymentInstrument = function(){};
 
