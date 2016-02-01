@@ -1,8 +1,13 @@
-module.exports = function() {
+module.exports = function(map) {
     // simulate a key-value storage
-    var internalMap = {};
+    var internalMap = map;
 
     return {
+
+        containsKey: function(key) {
+            return internalMap.hasOwnProperty(key);
+        },
+
         get: function(key) {
             return internalMap[key];
         },
@@ -13,6 +18,8 @@ module.exports = function() {
     };
 };
 
-exports.PROPERTY_NOT_FOUND = function(){};
-exports.EMPTY_MAP = function(){};
-exports.PROPERTY_NOT_DECLARED = function(){};
+exports.PROPERTY_NOT_FOUND = function() {};
+
+exports.EMPTY_MAP = function() {};
+
+exports.PROPERTY_NOT_DECLARED = function() {};
