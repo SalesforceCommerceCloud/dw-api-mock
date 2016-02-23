@@ -1,4 +1,4 @@
-var _super = require('LineItem');
+var _super = require('./LineItem');
 
 var ShippingLineItem = function(){};
 

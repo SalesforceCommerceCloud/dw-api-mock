@@ -1,4 +1,4 @@
-var _super = require('EncryptedObject');
+var _super = require('../customer/EncryptedObject');
 
 var PaymentInstrument = function(){};
 

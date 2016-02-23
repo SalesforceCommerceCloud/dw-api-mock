@@ -54,11 +54,27 @@ global.request = {
 			}
 		},
 
+		/**
+		* Returns a sub-map containing all parameters that start with the given prefix.
+		*/
+		getParameterMap: function(prefix) {
+			var result = [];
+			for (var key in this) {
+				if (key.indexOf(prefix) === 0) {
+					result.push(this[key]);
+				}
+			}
+
+			return result;
+		},
+
 		setNonSubmittedKeys: function(keys) {
 			for (var i = 0; i < keys.length; i++) {
 				keys[i] = new Bean({
 					value: null,
 					stringValue: null,
+					intValue: null,
+					doubleValue: null,
 					submitted: false
 				});
 			}
@@ -71,12 +87,21 @@ global.request = {
 				this[key] = new Bean({
 					value: value,
 					intValue: parseInt(value),
+					doubleValue: parseFloat(value),
 					stringValue: value,
 					submitted: true
 				});
 			} else {
 				throw 'Invalid Querystring';
 			}
+		},
+
+		destroyParameters: function() {
+			for (var key in this) {
+				if (this.hasOwnProperty(key) && typeof this[key] !== 'function') {
+					delete this[key];
+				}
+			}			
 		}
 	},
 	httpSecure: true,
