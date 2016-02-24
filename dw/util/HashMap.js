@@ -1,6 +1,6 @@
 module.exports = function(map) {
     // simulate a key-value storage
-    var internalMap = map;
+    var internalMap = map || {};
 
     return {
 
