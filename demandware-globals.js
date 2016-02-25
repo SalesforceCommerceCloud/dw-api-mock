@@ -139,5 +139,9 @@ global.XML.prototype.toXMLString = function() {
     return 'NOT IMPLEMENTED';
 };
 
+global.String.prototype.equals = function(object) {
+    return (typeof object === 'string') && object === this.valueOf();
+};
+
 global.PIPELET_NEXT = 1;
 global.PIPELET_ERROR = 0;
