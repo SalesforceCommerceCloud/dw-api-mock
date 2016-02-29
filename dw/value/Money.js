@@ -1,3 +1,9 @@
+/**
+ * Money constructor.
+ * @param {Number} value - Specified amount.
+ * @param {String} currencyCode - Specified currency code.
+ * @constructor
+ */
 var Money = function(value, currencyCode) {
     this.value = value;
     this.currencyCode = currencyCode;
