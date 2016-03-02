@@ -4,6 +4,7 @@ var LineItemCtnr = function(){};
 
 LineItemCtnr.prototype = new _super();
 
+LineItemCtnr.prototype.createBillingAddress = function(){};
 LineItemCtnr.prototype.getCurrencyCode = function(){};
 LineItemCtnr.prototype.getProductLineItems = function(){};
 LineItemCtnr.prototype.getCustomerEmail = function(){};
