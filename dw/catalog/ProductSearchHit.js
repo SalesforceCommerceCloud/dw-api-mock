@@ -1,5 +1,6 @@
 var ProductSearchHit = function(){};
 
+ProductSearchHit.prototype.getProductID = function(){};
 ProductSearchHit.prototype.getProduct = function(){};
 ProductSearchHit.prototype.getMinPrice = function(){};
 ProductSearchHit.prototype.getMaxPrice = function(){};
