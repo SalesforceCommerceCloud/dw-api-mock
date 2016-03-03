@@ -1,4 +1,4 @@
-var _super = require('Writer');
+var _super = require('./Writer');
 
 var FileWriter = function(){};
 

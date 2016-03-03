@@ -1,4 +1,4 @@
-var _super = require('SearchRefinementValue');
+var _super = require('./SearchRefinementValue');
 
 var ProductSearchRefinementValue = function(){};
 

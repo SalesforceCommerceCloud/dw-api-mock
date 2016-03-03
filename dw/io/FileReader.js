@@ -1,4 +1,4 @@
-var _super = require('Reader');
+var _super = require('./Reader');
 
 var FileReader = function(){};
 

@@ -1,4 +1,4 @@
-var _super = require('ActiveData');
+var _super = require('../object/ActiveData');
 
 var ProductActiveData = function(){};
 

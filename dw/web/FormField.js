@@ -1,4 +1,4 @@
-var _super = require('FormElement');
+var _super = require('./FormElement');
 
 var FormField = function(){};
 

@@ -1,8 +1,4 @@
-var _super = require('RecordAdapter');
-
 var Invoice = function(){};
-
-Invoice.prototype = new _super();
 
 Invoice.prototype.getType = function(){};
 Invoice.prototype.getStatus = function(){};

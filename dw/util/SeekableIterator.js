@@ -1,4 +1,4 @@
-var _super = require('dw/util/Iterator');
+var _super = require('../../dw/util/Iterator');
 
 var SeekableIterator = function(){};
 

@@ -1,4 +1,4 @@
-var _super = require('FormGroup');
+var _super = require('./FormGroup');
 
 var Form = function(){};
 

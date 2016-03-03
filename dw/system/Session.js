@@ -14,11 +14,11 @@ Session.prototype.getSourceCodeInfo = function(){};
 Session.prototype.getLastReceivedSourceCodeInfo = function(){};
 Session.prototype.currency=null;
 Session.prototype.userName=null;
-Session.prototype.custom=null;
+Session.prototype.custom={};
 Session.prototype.customer=null;
 Session.prototype.sessionID=null;
 Session.prototype.clickStream=null;
-Session.prototype.privacy=null;
+Session.prototype.privacy={};
 Session.prototype.sourceCodeInfo=null;
 Session.prototype.lastReceivedSourceCodeInfo=null;
 
