@@ -1,4 +1,8 @@
-var Status = function(){};
+var Status = function(status, code, message){
+    this.status  = status  || null;
+    this.code    = code    || null;
+    this.message = message || null;
+};
 
 Status.prototype.getMessage = function(){};
 Status.prototype.isError = function(){};
