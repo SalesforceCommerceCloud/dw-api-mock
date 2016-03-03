@@ -48,6 +48,19 @@ describe("Product Model", function() {
 });
 ```
 
+All the dependencies can be added to the root of your repository into a `package.json` file and the unit tests would be inside a test folder, so you would have
+
+* cartridges
+* site_import
+* test
+
+Now you can simply run
+```
+#!bash
+$ npm install
+$ mocha test/*
+```
+
 License
 -------
 Licensed under the current NDA and licensing agreement in place with your organization. (This is explicitly not open source licensing.)
