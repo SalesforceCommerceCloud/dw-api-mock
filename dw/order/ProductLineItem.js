@@ -1,6 +1,8 @@
 var _super = require('./LineItem');
 
-var ProductLineItem = function(){};
+var ProductLineItem = function(){
+    this.custom = {};
+};
 
 ProductLineItem.prototype = new _super();
 

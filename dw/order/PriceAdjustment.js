@@ -1,6 +1,8 @@
 var _super = require('./LineItem');
 
-var PriceAdjustment = function(){};
+var PriceAdjustment = function(){
+    this.custom = {};
+};
 
 PriceAdjustment.prototype = new _super();
 
