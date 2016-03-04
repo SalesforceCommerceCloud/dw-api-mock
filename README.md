@@ -54,6 +54,41 @@ All the dependencies can be added to the root of your repository into a `package
 * site_import
 * test
 
+Sample package.json
+
+```
+{
+  "name": "my-repo",
+  "version": "1.0.0",
+  "description": "A repo description",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "app-module-path": "^1.0.4",
+    "chai": "^3.4.1",
+    "dw-api-mock": "git+ssh://bitbucket.org/loreal/dw-api-mock.git",
+    "istanbul": "^0.4.1",
+    "mocha": "^2.3.4",
+    "proxyquire": "^1.7.3",
+    "sinon": "^1.17.2",
+    "sinon-chai": "^2.8.0",
+    "xunit-file": "0.0.7"
+  },
+  "scripts": {
+    "test": "mocha test/*",
+    "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha"
+  },
+  "keywords": [
+    "myrepo"
+  ],
+  "author": "Your Name",
+  "license": "UNLICENSED",
+  "homepage": "www.yourhomepage.com"
+}
+```
+
 Now you can simply run
 ```
 #!bash
