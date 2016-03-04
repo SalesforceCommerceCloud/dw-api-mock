@@ -3,5 +3,8 @@
   "description": "Demandware API mock making unit testing via rapunzel possible",
   "version": "0.0.9",
   "private": true,
-  "license": "Demandware Community License"
+  "license": "Demandware Community License",
+  "dependencies": {
+    "app-module-path": "^1.0.5"
+  }
 }

@@ -188,3 +188,6 @@ global.String.prototype.equals = function(object) {
 
 global.PIPELET_NEXT = 1;
 global.PIPELET_ERROR = 0;
+
+// add root as module lookup location so that require("dw/*") will work
+require('app-module-path').addPath(__dirname + '/');
