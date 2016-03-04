@@ -1,3 +1,8 @@
-module.exports = function(){};
-exports.callHook = function(){};
-exports.hasHook = function(){};
+
+var HookMgr = function() {};
+HookMgr.prototype = new Object();
+
+HookMgr.callHook = function(extensionPoint, functionName, args) {};
+HookMgr.hasHook = function(extension) {};
+
+module.exports = HookMgr;
