@@ -34,6 +34,7 @@
  * @author Peter H&auml;nsgen
  */
 Transaction = function() {};
+
 Transaction.prototype = new Object();
 
 /**
@@ -69,4 +70,5 @@ Transaction.wrap = function(callback) {
 	callback();
 };
 
+module.exports = Transaction;
 
