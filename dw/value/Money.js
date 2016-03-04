@@ -63,7 +63,22 @@ Money.prototype.toString = function() {};
 
 Money.prototype.hashCode = function() {};
 
-Money.prototype.compareTo = function() {};
+/**
+ * Compares this instance against another one.
+ * @param {Money} money - A money instance to compare against.
+ * @returns {Number} A negative number when this instance is smaller;
+ * a positive number when this instance is bigger;
+ * zero when this instance equals to the parameter.
+ */
+Money.prototype.compareTo = function(money) {
+    if (this.value < money.value) {
+        return -1;
+    } else if (this.value > money.value) {
+        return 1;
+    } else {
+        return 0;
+    }
+};
 
 Money.prototype.isAvailable = function() {};
 
