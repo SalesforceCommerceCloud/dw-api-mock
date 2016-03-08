@@ -148,6 +148,16 @@ global.request = {
                     delete this[key];
                 }
             }
+        },
+
+        get: function(key) {
+            return this[key] || new Bean({
+                    value: "",
+                    intValue: 0,
+                    doubleValue: 0,
+                    stringValue: "",
+                    submitted: false
+                });
         }
     },
     httpSecure: true,
