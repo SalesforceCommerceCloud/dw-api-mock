@@ -52,3 +52,6 @@ Promotion.prototype.promotionalPrice=null;
 Promotion.prototype.conditionalDescription=null;
 
 module.exports = Promotion;
+Promotion.EXCLUSIVITY_GLOBAL = "EXCLUSIVITY_GLOBAL";
+Promotion.EXCLUSIVITY_CLASS  = "EXCLUSIVITY_CLASS";
+Promotion.EXCLUSIVITY_NONE   = "EXCLUSIVITY_NONE";
