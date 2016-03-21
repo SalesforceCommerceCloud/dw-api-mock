@@ -111,7 +111,11 @@ global.request = {
     httpUserAgent: '',
     isHttpSecure: function() {
         return true;
-    }
+    },
+
+    getHttpHeaders: function() {},
+
+    isIncludeRequest: function() {}
 };
 global.request.prototype = dw.system.Request;
 
