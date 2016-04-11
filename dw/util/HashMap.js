@@ -14,6 +14,21 @@ module.exports = function(map) {
 
         put: function(key, value) {
             internalMap[key] = value;
+        },
+
+        entrySet: function() {
+            var set = [];
+            var key;
+            for (key in internalMap) {
+                if (internalMap.hasOwnProperty(key)) {
+                    set.push({
+                        key: key,
+                        value: internalMap[key]
+                    });
+                }
+            }
+
+            return set;
         }
     };
 };
