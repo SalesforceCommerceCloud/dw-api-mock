@@ -1,4 +1,4 @@
-var _super = require('XMLStreamWriter');
+var _super = require('./XMLStreamWriter');
 
 var XMLIndentingStreamWriter = function(){};
 
