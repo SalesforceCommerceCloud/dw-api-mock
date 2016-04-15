@@ -12,3 +12,5 @@ function Transaction(){
 Transaction.wrap = function(callback){
     callback();
 }
+
+module.exports = Transaction;
