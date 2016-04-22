@@ -1,7 +1,8 @@
-var _super = require('./Reader');
+var Reader = require('./Reader');
 
-var FileReader = function(){};
+var FileReader = function() {
+};
 
-FileReader.prototype = new _super();
+FileReader.prototype = Object.create(Reader.prototype);
 
 module.exports = FileReader;
