@@ -18,4 +18,6 @@ Iterator.prototype.next = function() {
     throw new Error('Iterator has no more elements');
 };
 
+Iterator.prototype.asList = function() {};
+
 module.exports = Iterator;
