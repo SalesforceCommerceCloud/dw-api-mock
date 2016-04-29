@@ -22,4 +22,7 @@ Status.prototype.items=null;
 Status.prototype.parameters=null;
 Status.prototype.detail=null;
 
+Status.OK = 1;
+Status.ERROR = 0;
+
 module.exports = Status;
