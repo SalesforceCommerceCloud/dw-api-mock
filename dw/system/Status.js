@@ -21,4 +21,7 @@ Status.prototype.addDetail = function(){};
 Status.OK    = 0;
 Status.ERROR = 1;
 
+Status.OK = 1;
+Status.ERROR = 0;
+
 module.exports = Status;
