@@ -12,5 +12,6 @@ Response.prototype.setContentType = function(contentType) {
 };
 Response.prototype.CONTENT_TYPE = '';
 Response.prototype.writer = new (require('../io/PrintWriter'))();
+Response.prototype.setStatus = function() {};
 
 module.exports = Response;
