@@ -1,8 +1,4 @@
-var _super = require('RecordAdapter');
-
 var ReturnCaseItem = function(){};
-
-ReturnCaseItem.prototype = new _super();
 
 ReturnCaseItem.prototype.getItemId = function(){};
 ReturnCaseItem.prototype.getAuthorizedQuantityValue = function(){};

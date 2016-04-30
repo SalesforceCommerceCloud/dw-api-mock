@@ -1,4 +1,4 @@
-var _super = require('Iterator');
+var _super = require('../util/Iterator');
 
 var LoopIterator = function(){};
 

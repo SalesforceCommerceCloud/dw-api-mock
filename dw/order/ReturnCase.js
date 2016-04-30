@@ -1,8 +1,4 @@
-var _super = require('RecordAdapter');
-
 var ReturnCase = function(){};
-
-ReturnCase.prototype = new _super();
 
 ReturnCase.prototype.getStatus = function(){};
 ReturnCase.prototype.getReturns = function(){};

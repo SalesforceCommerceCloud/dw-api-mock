@@ -1,8 +1,4 @@
-var _super = require('RecordAdapter');
-
 var InvoiceItem = function(){};
-
-InvoiceItem.prototype = new _super();
 
 InvoiceItem.prototype.getQuantity = function(){};
 InvoiceItem.prototype.getBasePrice = function(){};

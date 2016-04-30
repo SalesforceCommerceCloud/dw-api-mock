@@ -1,4 +1,4 @@
-var _super = require('SearchRefinementDefinition');
+var _super = require('../catalog/SearchRefinementDefinition');
 
 var ContentSearchRefinementDefinition = function(){};
 
