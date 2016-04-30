@@ -1,7 +1,10 @@
 var Status = function(status, code, message){
-    this.status = status;
-    this.code = code;
-    this.message = message;
+    this.status  = typeof status  !== "undefined" ? status  : null;
+    this.code    = typeof code    !== "undefined" ? code    : null;
+    this.message = typeof message !== "undefined" ? message : null;
+    this.items   = null;
+    this.parameters=null;
+    this.detail  = null;
 };
 
 Status.prototype.getMessage = function(){};
@@ -14,13 +17,9 @@ Status.prototype.addItem = function(){};
 Status.prototype.getParameters = function(){};
 Status.prototype.getDetail = function(){};
 Status.prototype.addDetail = function(){};
-Status.prototype.message=null;
-Status.prototype.status=null;
-Status.prototype.details=null;
-Status.prototype.code=null;
-Status.prototype.items=null;
-Status.prototype.parameters=null;
-Status.prototype.detail=null;
+
+Status.OK    = 0;
+Status.ERROR = 1;
 
 Status.OK = 1;
 Status.ERROR = 0;

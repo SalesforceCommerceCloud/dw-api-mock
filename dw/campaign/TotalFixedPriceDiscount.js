@@ -1,4 +1,4 @@
-var _super = require('Discount');
+var _super = require('./Discount');
 
 var TotalFixedPriceDiscount = function(){};
 

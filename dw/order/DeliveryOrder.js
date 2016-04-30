@@ -1,8 +1,4 @@
-var _super = require('RecordAdapter');
-
 var DeliveryOrder = function(){};
-
-DeliveryOrder.prototype = new _super();
 
 DeliveryOrder.prototype.getCurrencyCode = function(){};
 DeliveryOrder.prototype.getStatus = function(){};

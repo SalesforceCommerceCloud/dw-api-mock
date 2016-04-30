@@ -29,7 +29,50 @@ var Bean = function(simpleObject) {
     return simpleObject;
 };
 
-global.dw = require('./scriptapi.js').dw;
+/**
+ * Walk the given directory synchronously and return the files
+ *
+ * @param  {String} dir      The directory to walk
+ * @param  {Array}  filelist Leave empty on first call, used for recursion
+ *
+ * @return {Array}          The files (full paths)
+ */
+var walkSync = function(dir, filelist) {
+  var fs = fs || require('fs'),
+      files = fs.readdirSync(dir);
+  filelist = filelist || [];
+  files.forEach(function(file) {
+    if (fs.statSync(dir + '/' + file).isDirectory()) {
+      filelist = walkSync(dir + '/' + file, filelist);
+    }
+    else {
+      filelist.push(dir + '/' + file);
+    }
+  });
+  return filelist;
+};
+
+var path = require('path');
+// walk the dw/* directory and add create dw.* globals by requiring the found stuff
+walkSync(__dirname).forEach(function(file){
+    var classPath = path.relative(__dirname,file).replace('.js','');
+    var pathArray = classPath.split(path.sep);
+    if(pathArray.length == 3 && pathArray[0] == 'dw'){
+        var obj = global;
+        pathArray.forEach(function(pathElem){
+            //console.log(pathElem);
+            if(!obj[pathElem]){
+                obj[pathElem] = {};
+            }
+            obj = obj[pathElem];
+        });
+        try{
+            global[pathArray[0]][pathArray[1]][pathArray[2]] = require("./"+classPath);
+        }catch(e){
+            console.log("Could not require "+classPath+e);
+        }
+    }
+});
 
 global.empty = function(obj) {
     if (obj === null || obj === undefined || obj === '' || obj === 0 || (typeof (obj) !== 'function' && obj.length !== undefined && obj.length === 0)) {
@@ -105,6 +148,16 @@ global.request = {
                     delete this[key];
                 }
             }
+        },
+
+        get: function(key) {
+            return this[key] || new Bean({
+                    value: "",
+                    intValue: 0,
+                    doubleValue: 0,
+                    stringValue: "",
+                    submitted: false
+                });
         }
     },
     httpSecure: true,
@@ -149,6 +202,8 @@ global.String.prototype.equals = function(object) {
 
 global.webreferences = {};
 global.webreferences2 = {};
-
 global.PIPELET_NEXT = 1;
 global.PIPELET_ERROR = 0;
+
+// add root as module lookup location so that require("dw/*") will work
+require('app-module-path').addPath(__dirname + '/');

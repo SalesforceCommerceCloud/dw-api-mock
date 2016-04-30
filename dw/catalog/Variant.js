@@ -1,4 +1,4 @@
-var _super = require('Product');
+var _super = require('./Product');
 
 var Variant = function(){};
 
