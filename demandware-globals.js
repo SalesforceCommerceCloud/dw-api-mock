@@ -168,7 +168,9 @@ global.request = {
 
     getHttpHeaders: function() {},
 
-    isIncludeRequest: function() {}
+    isIncludeRequest: function() {},
+
+    getHttpCookies: function() {}
 };
 global.request.prototype = dw.system.Request;
 
