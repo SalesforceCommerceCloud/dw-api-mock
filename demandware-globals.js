@@ -171,6 +171,8 @@ global.request = {
 
     getHttpHeaders: function() {},
 
+    getHttpUserAgent: function() {},
+
     isIncludeRequest: function() {},
 
     getHttpCookies: function() {}
