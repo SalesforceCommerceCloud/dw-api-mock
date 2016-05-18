@@ -136,7 +136,7 @@ global.request = {
                     intValue: parseInt(value),
                     doubleValue: parseFloat(value),
                     stringValue: value,
-                    booleanValue: 'false' !== value.toLowerCase() ? true : false,
+                    booleanValue: value && value.toLowerCase() === 'true' ? true : false,
                     submitted: true
                 });
             } else {
