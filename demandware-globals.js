@@ -171,6 +171,12 @@ global.request = {
 
     getHttpHeaders: function() {},
 
+    getHttpUserAgent: function() {},
+
+    getHttpHost: function() {},
+
+    getLocale: function() {},
+
     isIncludeRequest: function() {},
 
     getHttpCookies: function() {}
