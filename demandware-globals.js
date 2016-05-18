@@ -173,6 +173,10 @@ global.request = {
 
     getHttpUserAgent: function() {},
 
+    getHttpHost: function() {},
+
+    getLocale: function() {},
+
     isIncludeRequest: function() {},
 
     getHttpCookies: function() {}
