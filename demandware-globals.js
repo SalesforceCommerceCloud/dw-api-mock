@@ -121,6 +121,7 @@ global.request = {
                     stringValue: null,
                     intValue: null,
                     doubleValue: null,
+                    booleanValue: false,
                     submitted: false
                 });
             }
@@ -135,6 +136,7 @@ global.request = {
                     intValue: parseInt(value),
                     doubleValue: parseFloat(value),
                     stringValue: value,
+                    booleanValue: value && value.toLowerCase() === 'true',
                     submitted: true
                 });
             } else {
@@ -156,6 +158,7 @@ global.request = {
                     intValue: 0,
                     doubleValue: 0,
                     stringValue: "",
+                    booleanValue: false,
                     submitted: false
                 });
         }
