@@ -19,5 +19,16 @@ module.exports.createFromArray = function(arr) {
 		arr.splice(arr.indexOf(obj), 1);
 	};
 
+	arr.removeAll = function(objs) {
+		index = 0;
+		while (index < objs.length) {
+			if (arr.indexOf(objs[index]) > -1) {
+				arr.splice(objs[index], 1);
+			} else {
+				index++;
+			}
+		}
+	};
+
 	return arr;
 };
