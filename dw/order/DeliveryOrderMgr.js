@@ -1,6 +1,7 @@
-var DeliveryOrderMgr = function(){};
+var DeliveryOrderMgr = function() {};
 
-DeliveryOrderMgr.createShippingOrders = function(){};
-DeliveryOrderMgr.createDeliveryOrders = function(){};
+DeliveryOrderMgr.createShippingOrders = function() {};
+
+DeliveryOrderMgr.createDeliveryOrders = function() {};
 
 module.exports = DeliveryOrderMgr;

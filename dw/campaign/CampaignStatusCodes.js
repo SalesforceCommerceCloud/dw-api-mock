@@ -1,3 +1,3 @@
-var CampaignStatusCodes = function(){};
+var CampaignStatusCodes = function() {};
 
 module.exports = CampaignStatusCodes;

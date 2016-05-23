@@ -36,21 +36,18 @@ var Transaction = function() {};
 
 /**
  * Begins a transaction.
- * @memberOf Transaction
  * @static
  */
 Transaction.begin = function() {};
 
 /**
  * Commits the current transaction. The transaction must have been started with <a href="class_Transaction.html#Transaction_begin_DetailAnchor">begin()</a> before.
- * @memberOf Transaction
  * @static
  */
 Transaction.commit = function() {};
 
 /**
  * Rolls back the current transaction. The transaction must have been started with <a href="class_Transaction.html#Transaction_begin_DetailAnchor">begin()</a> before.
- * @memberOf Transaction
  * @static
  */
 Transaction.rollback = function() {};
@@ -64,7 +61,7 @@ Transaction.rollback = function() {};
  * @static
  */
 Transaction.wrap = function(callback) {
-	return callback();
+    return callback();
 };
 
 module.exports = Transaction;

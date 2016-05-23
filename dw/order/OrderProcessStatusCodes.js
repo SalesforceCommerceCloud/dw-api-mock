@@ -1,3 +1,3 @@
-var OrderProcessStatusCodes = function(){};
+var OrderProcessStatusCodes = function() {};
 
 module.exports = OrderProcessStatusCodes;

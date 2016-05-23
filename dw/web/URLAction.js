@@ -1,3 +1,3 @@
-var URLAction = function(){};
+var URLAction = function() {};
 
 module.exports = URLAction;

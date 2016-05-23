@@ -1,3 +1,3 @@
-var CouponStatusCodes = function(){};
+var CouponStatusCodes = function() {};
 
 module.exports = CouponStatusCodes;

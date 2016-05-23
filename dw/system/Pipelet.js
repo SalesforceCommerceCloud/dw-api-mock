@@ -1,5 +1,5 @@
-var Pipelet = function(){};
+var Pipelet = function() {};
 
-Pipelet.prototype.execute = function(){};
+Pipelet.prototype.execute = function() {};
 
 module.exports = Pipelet;

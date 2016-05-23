@@ -1,5 +1,5 @@
-var Mac = function(){};
+var Mac = function() {};
 
-Mac.prototype.digest = function(){};
+Mac.prototype.digest = function() {};
 
 module.exports = Mac;

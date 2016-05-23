@@ -1,3 +1,3 @@
-var AgentUserStatusCodes = function(){};
+var AgentUserStatusCodes = function() {};
 
 module.exports = AgentUserStatusCodes;

@@ -1,5 +1,5 @@
-var UUIDUtils = function(){};
+var UUIDUtils = function() {};
 
-UUIDUtils.createUUID = function(){};
+UUIDUtils.createUUID = function() {};
 
 module.exports = UUIDUtils;

@@ -1,3 +1,3 @@
-var PaymentStatusCodes = function(){};
+var PaymentStatusCodes = function() {};
 
 module.exports = PaymentStatusCodes;

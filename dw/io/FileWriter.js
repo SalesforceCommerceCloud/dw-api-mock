@@ -1,10 +1,11 @@
 var _super = require('./Writer');
 
-var FileWriter = function(){};
+var FileWriter = function() {};
 
 FileWriter.prototype = new _super();
 
-FileWriter.prototype.writeLine = function(){};
-FileWriter.prototype.close = function(){};
+FileWriter.prototype.writeLine = function() {};
+
+FileWriter.prototype.close = function() {};
 
 module.exports = FileWriter;

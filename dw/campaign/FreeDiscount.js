@@ -1,6 +1,6 @@
 var _super = require('./Discount');
 
-var FreeDiscount = function(){};
+var FreeDiscount = function() {};
 
 FreeDiscount.prototype = new _super();
 

@@ -1,6 +1,7 @@
-var ShipmentShippingCost = function(){};
+var ShipmentShippingCost = function() {};
 
-ShipmentShippingCost.prototype.getAmount = function(){};
-ShipmentShippingCost.prototype.amount=null;
+ShipmentShippingCost.prototype.getAmount = function() {};
+
+ShipmentShippingCost.prototype.amount = null;
 
 module.exports = ShipmentShippingCost;

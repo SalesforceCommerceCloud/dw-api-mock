@@ -1,3 +1,3 @@
-var GiftCertificateStatusCodes = function(){};
+var GiftCertificateStatusCodes = function() {};
 
 module.exports = GiftCertificateStatusCodes;
