@@ -1,0 +1,42 @@
+{
+    "browser": true,
+    "jquery": true,
+    "node": true,
+
+    "curly": true,
+    "maxdepth": 3,
+    "maxerr": 1000,
+
+    "undef": true,
+    "unused": true,
+    "expr": true,
+    "eqeqeq": true,
+
+    "globals": {
+        "alert": false,
+        "console": false,
+        "XML": false,
+        "window": false,
+
+        "File": true,
+        "customer": true,
+        "empty": false,
+        "request": true,
+        "session": true,
+        "response": true,
+        "dw": false,
+        "PIPELET_ERROR": true,
+        "PIPELET_NEXT": true,
+
+        "describe": true,
+        "xdescribe": true,
+        "it": true,
+        "xit": true,
+        "webreferences": true,
+        "beforeEach": true,
+        "afterEach": true,
+        "before": true,
+        "after": true,
+        "webreferences2": true
+    }
+}
