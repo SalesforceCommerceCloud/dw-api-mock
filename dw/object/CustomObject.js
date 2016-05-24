@@ -1,6 +1,6 @@
 var _super = require('../object/ExtensibleObject');
 
-function CustomObject() { }
+var CustomObject = function() {};
 
 CustomObject.prototype = new _super();
 

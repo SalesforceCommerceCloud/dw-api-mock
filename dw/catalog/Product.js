@@ -12,7 +12,8 @@ Product.prototype.getVariants = function() {};
 Product.prototype.__id = function() {};
 
 Product.prototype.getImage = function() {
-    return new require('../content/MediaFile');
+    var MediaFile = require('../content/MediaFile');
+    return new MediaFile();
 };
 
 Product.prototype.getShortDescription = function() {};
@@ -91,6 +92,8 @@ Product.prototype.isSearchable = function() {};
 
 Product.prototype.getSearchableFlag = function() {};
 
+// jscs:disable requireCamelCaseOrUpperCaseIdentifiers
+
 Product.prototype.setSearchableFlag_1 = function() {};
 
 Product.prototype.setSearchableFlag_2 = function() {};
@@ -102,6 +105,8 @@ Product.prototype.setSearchPlacement_2 = function() {};
 Product.prototype.setSearchRank_1 = function() {};
 
 Product.prototype.setSearchRank_2 = function() {};
+
+// jscs:enable requireCamelCaseOrUpperCaseIdentifiers
 
 Product.prototype.getEAN = function() {};
 
@@ -139,9 +144,13 @@ Product.prototype.getManufacturerName = function() {};
 
 Product.prototype.getManufacturerSKU = function() {};
 
+// jscs:disable requireCamelCaseOrUpperCaseIdentifiers
+
 Product.prototype.setOnlineFlag_1 = function() {};
 
 Product.prototype.setOnlineFlag_2 = function() {};
+
+// jscs:enable requireCamelCaseOrUpperCaseIdentifiers
 
 Product.prototype.getUnit = function() {};
 

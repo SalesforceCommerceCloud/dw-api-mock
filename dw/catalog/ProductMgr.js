@@ -1,7 +1,8 @@
 var ProductMgr = function() {};
 
 ProductMgr.getProduct = function() {
-    return new require('./Product');
+    var Product = require('./Product');
+    return new Product();
 };
 
 ProductMgr.queryAllSiteProducts = function() {};

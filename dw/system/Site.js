@@ -30,7 +30,10 @@ Site.prototype.getTimezone = function() {};
 
 Site.prototype.getTimezoneOffset = function() {};
 
-Site.prototype.getCalendar = function() {return new require('../util/Calendar')();};
+Site.prototype.getCalendar = function() {
+    var Calendar = require('../util/Calendar');
+    return new Calendar();
+};
 
 Site.prototype.isOMSEnabled = function() {};
 

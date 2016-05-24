@@ -9,10 +9,18 @@ module.exports = function(grunt) {
 
         jscs: {
             files: '<%= jshint.files %>'
+        },
+
+        watch: {
+            js: {
+                files: '<%= jshint.files %>',
+                tasks: ['default']
+            }
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-jscs');
 
     grunt.registerTask('default', ['jshint', 'jscs']);

@@ -13,7 +13,8 @@ ProductVariationAttributeValue.prototype.getDescription = function() {};
 ProductVariationAttributeValue.prototype.__impl = function() {};
 
 ProductVariationAttributeValue.prototype.getImage = function() {
-    return new require('../content/MediaFile');
+    var MediaFile = require('../content/MediaFile');
+    return new MediaFile();
 };
 
 ProductVariationAttributeValue.prototype.getImages = function() {};

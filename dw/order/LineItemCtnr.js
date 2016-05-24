@@ -1,5 +1,5 @@
 var _super = require('../object/ExtensibleObject');
-
+var Shipment = require('./Shipment');
 var LineItemCtnr = function() {};
 
 LineItemCtnr.prototype = new _super();
@@ -157,7 +157,7 @@ LineItemCtnr.prototype.productLineItems = null;
 LineItemCtnr.prototype.customerEmail = null;
 LineItemCtnr.prototype.customer = null;
 LineItemCtnr.prototype.customerNo = null;
-LineItemCtnr.prototype.defaultShipment = new require('./Shipment')();
+LineItemCtnr.prototype.defaultShipment = new Shipment();
 LineItemCtnr.prototype.allProductLineItems = null;
 LineItemCtnr.prototype.allGiftCertificateLineItems = null;
 LineItemCtnr.prototype.giftCertificateLineItems = null;
