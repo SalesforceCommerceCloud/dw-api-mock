@@ -1,3 +1,3 @@
-var URLParameter = function(){};
+var URLParameter = function() {};
 
 module.exports = URLParameter;

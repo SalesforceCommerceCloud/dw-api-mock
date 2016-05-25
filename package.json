@@ -1,10 +1,17 @@
 {
   "name": "dw-api-mock",
   "description": "Demandware API mock making unit testing via rapunzel possible",
-  "version": "0.0.30",
+  "version": "0.0.31",
   "private": true,
   "license": "Demandware Community License",
   "dependencies": {
     "app-module-path": "^1.0.5"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-jscs": "^2.8.0"
   }
 }

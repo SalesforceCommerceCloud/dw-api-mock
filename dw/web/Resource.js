@@ -1,6 +1,7 @@
-var Resource = function(){};
+var Resource = function() {};
 
-Resource.msg = function(){};
-Resource.msgf = function(){};
+Resource.msg = function() {};
+
+Resource.msgf = function() {};
 
 module.exports = Resource;

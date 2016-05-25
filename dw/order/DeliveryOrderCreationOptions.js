@@ -1,5 +1,5 @@
-var DeliveryOrderCreationOptions = function(){};
+var DeliveryOrderCreationOptions = function() {};
 
-DeliveryOrderCreationOptions.orderQuery = function(){};
+DeliveryOrderCreationOptions.orderQuery = function() {};
 
 module.exports = DeliveryOrderCreationOptions;
