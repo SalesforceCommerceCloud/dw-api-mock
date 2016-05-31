@@ -101,12 +101,7 @@ global.request = {
         },
 
         getParameterNames: function() {
-            var result = [];
-            for (var key in this) {
-                result.push(key);
-            }
-
-            return result;
+            return Object.keys(this);
         },
 
         /**
