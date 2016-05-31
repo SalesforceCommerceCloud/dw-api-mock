@@ -100,9 +100,20 @@ global.request = {
             }
         },
 
+        getParameterNames: function() {
+            var result = [];
+            for (var key in this) {
+                if (this.hasOwnProperty(key) && typeof this[key] !== 'function') {
+                    result.push(key);
+                }
+            }
+
+            return result;
+        },
+
         /**
-                * Returns a sub-map containing all parameters that start with the given prefix.
-                */
+        * Returns a sub-map containing all parameters that start with the given prefix.
+        */
         getParameterMap: function(prefix) {
             var result = [];
             for (var key in this) {
