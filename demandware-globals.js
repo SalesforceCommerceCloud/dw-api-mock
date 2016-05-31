@@ -101,7 +101,14 @@ global.request = {
         },
 
         getParameterNames: function() {
-            return Object.keys(this);
+            var result = [];
+            for (var key in this) {
+                if (this.hasOwnProperty(key) && typeof this[key] !== 'function') {
+                    result.push(key);
+                }
+            }
+
+            return result;
         },
 
         /**
