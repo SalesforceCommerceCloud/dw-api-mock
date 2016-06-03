@@ -10,6 +10,8 @@ Response.prototype.addHttpCookie = function() {};
 
 Response.prototype.setExpires = function() {};
 
+Response.prototype.redirect = function() {};
+
 Response.prototype.getWriter = function() {
     return Response.prototype.writer;
 };
