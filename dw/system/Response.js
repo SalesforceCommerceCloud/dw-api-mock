@@ -8,6 +8,8 @@ Response.prototype.containsHttpHeader = function() {};
 
 Response.prototype.addHttpCookie = function() {};
 
+Response.prototype.setBuffered = function() {};
+
 Response.prototype.setExpires = function() {};
 
 Response.prototype.redirect = function() {};
