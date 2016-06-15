@@ -2,6 +2,8 @@ var Site = function() {};
 
 Site.prototype.getCurrencyCode = function() {};
 
+Site.getAllSites = function() {};
+
 Site.prototype.getName = function() {};
 
 Site.prototype.getID = function() {};
