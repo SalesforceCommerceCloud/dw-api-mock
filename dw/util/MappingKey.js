@@ -6,3 +6,5 @@ MappingKey.prototype.getSingleComponentKey = function() {};
 
 MappingKey.prototype.keyComponents = null;
 MappingKey.prototype.singleComponentKey = null;
+
+module.exports = MappingKey;
