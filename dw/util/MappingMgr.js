@@ -9,3 +9,5 @@ MappingMgr.getMappingNames = function() {};
 MappingMgr.keyIterator = function() {};
 
 MappingMgr.mappingNames = null;
+
+module.exports = MappingMgr;
