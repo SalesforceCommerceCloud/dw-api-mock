@@ -12,6 +12,8 @@ Response.prototype.setBuffered = function() {};
 
 Response.prototype.setExpires = function() {};
 
+Response.prototype.setVaryBy = function() {};
+
 Response.prototype.redirect = function() {};
 
 Response.prototype.getWriter = function() {
