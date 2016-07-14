@@ -18,6 +18,8 @@ Customer.prototype.getOrderHistory = function() {};
 
 Customer.prototype.isMemberOfCustomerGroup = function() {};
 
+Customer.prototype.isMemberOfAnyCustomerGroup = function() {};
+
 Customer.prototype.getProductLists = function() {};
 
 Customer.prototype.getAddressBook = function() {};
@@ -36,5 +38,6 @@ Customer.prototype.orderHistory = null;
 Customer.prototype.productLists = null;
 Customer.prototype.addressBook = null;
 Customer.prototype.note = null;
+Customer.prototype.lastLoginTime = null;
 
 module.exports = Customer;
