@@ -52,5 +52,6 @@ File.prototype.fullPath = null;
 
 File.CATALOG = '/CATALOGS/catalog';
 File.SEPARATOR = '/';
+File.IMPEX = '/IMPEX';
 
 module.exports = File;
