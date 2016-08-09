@@ -2,6 +2,7 @@ exports.ClickStream = require('./web/ClickStream.js');
 exports.ClickStreamEntry = require('./web/ClickStreamEntry.js');
 exports.Cookie = require('./web/Cookie.js');
 exports.Cookies = require('./web/Cookies.js');
+exports.CSRFProtection = require('./web/CSRFProtection.js');
 exports.Form = require('./web/Form.js');
 exports.FormAction = require('./web/FormAction.js');
 exports.FormElement = require('./web/FormElement.js');
