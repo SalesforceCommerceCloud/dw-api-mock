@@ -190,4 +190,7 @@ Order.prototype.deliveryItem = null;
 Order.prototype.deliveryItems = null;
 Order.prototype.returnCaseItem = null;
 
+Order.ORDER_STATUS_REPLACED = 1;
+Order.ORDER_STATUS_FAILED = 2;
+
 module.exports = Order;
