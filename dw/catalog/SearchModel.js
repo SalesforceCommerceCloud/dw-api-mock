@@ -1,5 +1,7 @@
 var SearchModel = function() {};
 
+SearchModel.getSearchRedirect = function() {};
+
 SearchModel.prototype.search = function() {};
 
 SearchModel.prototype.url = function() {};
