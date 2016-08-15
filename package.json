@@ -1,7 +1,7 @@
 {
   "name": "dw-api-mock",
   "description": "Demandware API mock making unit testing via rapunzel possible",
-  "version": "0.0.44",
+  "version": "0.0.45",
   "private": true,
   "license": "Demandware Community License",
   "dependencies": {
