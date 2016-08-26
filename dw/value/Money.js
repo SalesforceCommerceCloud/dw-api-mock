@@ -83,7 +83,7 @@ Money.prototype.compareTo = function(money) {
 Money.prototype.isAvailable = function() {};
 
 Money.prototype.getValueOrNull = function() {
-    return (typeof this.value !== 'undefined') ? this.value : null;
+    this.value || null;
 };
 
 Money.prorate = function() {};
