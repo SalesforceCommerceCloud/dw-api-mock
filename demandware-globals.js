@@ -98,8 +98,8 @@ global.request = {
         },
 
         /**
-                * Returns a sub-map containing all parameters that start with the given prefix.
-                */
+        * Returns a sub-map containing all parameters that start with the given prefix.
+        */
         getParameterMap: function(prefix) {
             var result = [];
             for (var key in this) {
@@ -129,13 +129,14 @@ global.request = {
         setParameter: function(keyValuePair) {
             if (keyValuePair.indexOf('=') > 0) {
                 var key = keyValuePair.split('=')[0];
-                var value = keyValuePair.split('=')[1];
+                var value = keyValuePair.split('=').slice(1).join('=');
                 this[key] = new Bean({
                     value: value,
                     intValue: parseInt(value),
                     doubleValue: parseFloat(value),
                     stringValue: value,
-                    submitted: true
+                    submitted: true,
+                    booleanValue: value === 'true' ? true : false
                 });
             } else {
                 throw 'Invalid Querystring';
@@ -158,6 +159,10 @@ global.request = {
                     stringValue: "",
                     submitted: false
                 });
+        },
+
+        isParameterSubmitted: function(key) {
+            return this.get(key).submitted;
         }
     },
     httpSecure: true,
