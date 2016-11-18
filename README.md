@@ -68,7 +68,7 @@ Sample package.json
   "devDependencies": {
     "app-module-path": "^1.0.4",
     "chai": "^3.4.1",
-    "dw-api-mock": "git+ssh://bitbucket.org/loreal/dw-api-mock.git",
+    "dw-api-mock": "git+ssh://bitbucket.org/demandware/dw-api-mock.git",
     "istanbul": "^0.4.1",
     "mocha": "^2.3.4",
     "proxyquire": "^1.7.3",
