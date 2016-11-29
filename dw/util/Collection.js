@@ -1,6 +1,7 @@
 var Collection = function() {};
 Collection.prototype.remove = function(obj) {};
 Collection.prototype.size = function() {};
+Collection.prototype.isEmpty = function(){};
 
 module.exports = Collection;
 

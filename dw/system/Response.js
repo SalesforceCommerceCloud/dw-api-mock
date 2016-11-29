@@ -4,6 +4,7 @@ Response.prototype.setHttpHeader = function() {};
 Response.prototype.addHttpHeader = function() {};
 Response.prototype.containsHttpHeader = function() {};
 Response.prototype.addHttpCookie = function() {};
+Response.prototype.redirect = function() {};
 Response.prototype.getWriter = function() {
     return Response.prototype.writer;
 };
