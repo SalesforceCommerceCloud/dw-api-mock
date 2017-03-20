@@ -169,7 +169,8 @@ global.request = {
     httpUserAgent: '',
     isHttpSecure: function() {
         return true;
-    }
+    },
+    custom: {}
 };
 global.request.prototype = dw.system.Request;
 

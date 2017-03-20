@@ -53,9 +53,22 @@ Money.prototype.divide = function(divisor) {
     return new Money(this.value / divisor, this.currencyCode);
 };
 
-Money.prototype.getCurrencyCode = function() {};
+/**
+ * Return current currency code.
+ * @returns {String}
+ */
+Money.prototype.getCurrencyCode = function() {
+    return this.currencyCode;
+};
 
-Money.prototype.add = function() {};
+/**
+ * Returns a new Money instance by adding the specified Money object from the current object.
+ * @param {Money} money - Value to add.
+ * @returns {Money}
+ */
+Money.prototype.add = function(money) {
+    return new Money(this.value + money.value, this.currencyCode);
+};
 
 Money.prototype.equals = function() {};
 
