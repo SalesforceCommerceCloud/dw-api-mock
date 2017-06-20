@@ -15,5 +15,6 @@ Logger.isErrorEnabled = function(){};
 Logger.isWarnEnabled = function(){};
 Logger.errorEnabled = function(){};
 Logger.getRootLogger = function(){};
+Logger.fatal = function(){};
 
 module.exports = Logger;
