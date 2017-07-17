@@ -75,7 +75,7 @@ walkSync(__dirname).forEach(function(file){
 });
 
 global.empty = function(obj) {
-    if (obj === null || obj === undefined || obj === '' || obj === 0 || (typeof (obj) !== 'function' && obj.length !== undefined && obj.length === 0)) {
+    if (obj === null || obj === undefined || obj === '' || (typeof (obj) !== 'function' && obj.length !== undefined && obj.length === 0)) {
         return true;
     } else {
         return false;
