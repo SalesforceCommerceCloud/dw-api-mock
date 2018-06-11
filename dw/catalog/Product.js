@@ -65,6 +65,7 @@ Product.prototype.isMaster = function(){};
 Product.prototype.isBundle = function(){};
 Product.prototype.isBundled = function(){};
 Product.prototype.isVariant = function(){};
+Product.prototype.isVariationGroup = function(){};
 Product.prototype.includedInBundle = function(){};
 Product.prototype.getBundledProductQuantity = function(){};
 Product.prototype.getBundledProducts = function(){};
