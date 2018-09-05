@@ -5,7 +5,7 @@ var ExtensibleObject = function(){};
 ExtensibleObject.prototype = new _super();
 
 ExtensibleObject.prototype.describe = function(){};
-ExtensibleObject.prototype.getCustom = function(){};
-ExtensibleObject.prototype.custom=null;
+ExtensibleObject.prototype.getCustom = function(){ return this.custom; };
+ExtensibleObject.prototype.custom={};
 
 module.exports = ExtensibleObject;
