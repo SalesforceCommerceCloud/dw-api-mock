@@ -6,3 +6,4 @@ exports.Locale = require('./util/Locale.js');
 exports.SeekableIterator = require('./util/SeekableIterator.js');
 exports.StringUtils = require('./util/StringUtils.js');
 exports.UUIDUtils = require('./util/UUIDUtils.js');
+exports.ArrayList = require('./util/ArrayList.js');
