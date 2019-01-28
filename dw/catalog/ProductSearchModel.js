@@ -44,6 +44,7 @@ ProductSearchModel.prototype.urlRefinePrice = function(){};
 ProductSearchModel.prototype.urlRelaxCategory = function(){};
 ProductSearchModel.prototype.urlRelaxPrice = function(){};
 ProductSearchModel.prototype.urlSortingRule = function(){};
+ProductSearchModel.prototype.getSearchRedirect = function(){};
 ProductSearchModel.prototype.category=null;
 ProductSearchModel.prototype.sortingRule=null;
 ProductSearchModel.prototype.products=null;
