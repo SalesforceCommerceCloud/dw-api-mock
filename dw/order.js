@@ -1,4 +1,5 @@
 exports.Basket = require('./order/Basket.js');
+exports.BasketMgr = require('./order/BasketMgr.js');
 exports.BonusDiscountLineItem = require('./order/BonusDiscountLineItem.js');
 exports.CouponLineItem = require('./order/CouponLineItem.js');
 exports.DeliveryItem = require('./order/DeliveryItem.js');

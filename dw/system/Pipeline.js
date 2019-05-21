@@ -1,5 +1,5 @@
 var Pipeline = function(){};
 
-Pipeline.prototype.execute = function(){};
+Pipeline.execute = function(){};
 
-module.exports = new Pipeline();
+module.exports = Pipeline;

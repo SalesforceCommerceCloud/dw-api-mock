@@ -73,4 +73,9 @@ PaymentInstrument.prototype.giftCertificateID=null;
 PaymentInstrument.prototype.giftCertificateCode=null;
 PaymentInstrument.prototype.maskedGiftCertificateCode=null;
 
+PaymentInstrument.METHOD_BANK_TRANSFER = "METHOD_BANK_TRANSFER";
+PaymentInstrument.METHOD_BML = "METHOD_BML";
+PaymentInstrument.METHOD_CREDIT_CARD = "METHOD_CREDIT_CARD";
+PaymentInstrument.METHOD_GIFT_CERTIFICATE = "METHOD_GIFT_CERTIFICATE";
+
 module.exports = PaymentInstrument;
