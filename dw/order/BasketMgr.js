@@ -1,8 +1,8 @@
 var BasketMgr = function(){};
 
-BasketMgr.prototype.currentBasket = null;
-BasketMgr.prototype.currentOrNewBasket = null;
-BasketMgr.prototype.storedBasket = null;
+BasketMgr.currentBasket = null;
+BasketMgr.currentOrNewBasket = null;
+BasketMgr.storedBasket = null;
 
 BasketMgr.createAgentBasket = function(){};
 BasketMgr.createBasketFromOrder = function(){};
