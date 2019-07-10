@@ -4,8 +4,6 @@ BasketMgr.currentBasket = null;
 BasketMgr.currentOrNewBasket = null;
 BasketMgr.storedBasket = null;
 
-BasketMgr.createBasketFromOrder = function(){};
-BasketMgr.getBasket = function(){};
 BasketMgr.createAgentBasket = function(){};
 BasketMgr.createBasketFromOrder = function(){};
 BasketMgr.deleteBasket = function(){};
