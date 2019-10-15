@@ -83,7 +83,5 @@ Profile.prototype.taxID=null;
 Profile.prototype.taxIDMasked=null;
 Profile.prototype.taxIDType=null;
 Profile.prototype.customerNo=null;
-Profile.prototype.getWallet=null;
-Profile.prototype.getAddressBook=null;
 
 module.exports = Profile;
