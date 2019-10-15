@@ -53,6 +53,8 @@ Profile.prototype.getTaxIDType = function(){};
 Profile.prototype.setEmail = function(){};
 Profile.prototype.getCustomerNo = function(){};
 Profile.prototype.setTaxIDType = function(){};
+Profile.prototype.getAddressBook() = function(){}
+Profile.prototype.getWallet() = function(){};
 Profile.prototype.email=null;
 Profile.prototype.fax=null;
 Profile.prototype.title=null;
@@ -81,5 +83,7 @@ Profile.prototype.taxID=null;
 Profile.prototype.taxIDMasked=null;
 Profile.prototype.taxIDType=null;
 Profile.prototype.customerNo=null;
+Profile.prototype.getWallet=null;
+Profile.prototype.getAddressBook=null;
 
 module.exports = Profile;
