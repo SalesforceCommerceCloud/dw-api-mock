@@ -1,5 +1,7 @@
 var Customer = function(){};
 
+Customer.AuthenticationStatus = require('./AuthenticationStatus');
+
 Customer.prototype.isRegistered = function(){};
 Customer.prototype.getID = function(){};
 Customer.prototype.getCustomerGroups = function(){};
