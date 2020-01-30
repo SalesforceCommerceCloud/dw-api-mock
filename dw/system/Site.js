@@ -33,4 +33,7 @@ Site.prototype.timezone=null;
 Site.prototype.timezoneOffset=null;
 Site.prototype.calendar=null;
 
+
+Site.current = new Site();
+
 module.exports = Site;
