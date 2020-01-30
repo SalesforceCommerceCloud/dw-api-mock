@@ -18,6 +18,7 @@ CustomerMgr.createCustomer = function() {};
 CustomerMgr.authenticateCustomer = function() {};
 CustomerMgr.loginCustomer = function() {};
 CustomerMgr.getCustomerByLogin = function() {};
+CustomerMgr.isAcceptablePassword = function isAcceptablePassword() {};
 
 CustomerMgr.prototype.customerGroups=null;
 CustomerMgr.prototype.profile=null;
