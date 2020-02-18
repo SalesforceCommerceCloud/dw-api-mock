@@ -12,5 +12,4 @@ CouponStatusCodes.TIMEFRAME_REDEMPTION_LIMIT_EXCEEDED = 'TIMEFRAME_REDEMPTION_LI
 CouponStatusCodes.COUPON_ALREADY_IN_BASKET = 'COUPON_ALREADY_IN_BASKET';
 CouponStatusCodes.APPLIED = 'APPLIED';
 
-
 module.exports = CouponStatusCodes;

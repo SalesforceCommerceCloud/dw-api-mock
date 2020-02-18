@@ -11,4 +11,5 @@ exports.SitePreferences = require('./system/SitePreferences.js');
 exports.Status = require('./system/Status.js');
 exports.StatusItem = require('./system/StatusItem.js');
 exports.System = require('./system/System.js');
+exports.Transaction = require('./system/Transaction.js');
 exports.Logger = require('./system/Logger.js');

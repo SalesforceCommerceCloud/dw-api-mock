@@ -15,6 +15,12 @@ CustomerMgr.getExternallyAuthenticatedCustomerProfile = function(){};
 CustomerMgr.loginExternallyAuthenticatedCustomer = function(){};
 CustomerMgr.getCustomerByCustomerNumber = function(){};
 CustomerMgr.createCustomer = function() {};
+CustomerMgr.authenticateCustomer = function() {};
+CustomerMgr.loginCustomer = function() {};
+CustomerMgr.getCustomerByLogin = function() {};
+CustomerMgr.isAcceptablePassword = function isAcceptablePassword() {};
+CustomerMgr.logoutCustomer = function logoutCustomer() {};
+
 CustomerMgr.prototype.customerGroups=null;
 CustomerMgr.prototype.profile=null;
 CustomerMgr.prototype.registeredCustomerCount=null;
