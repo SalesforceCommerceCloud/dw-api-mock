@@ -4,6 +4,7 @@ exports.Customer = require('./customer/Customer.js');
 exports.CustomerActiveData = require('./customer/CustomerActiveData.js');
 exports.CustomerAddress = require('./customer/CustomerAddress.js');
 exports.CustomerGroup = require('./customer/CustomerGroup.js');
+exports.CustomerList = require('./customer/CustomerList.js');
 exports.CustomerMgr = require('./customer/CustomerMgr.js');
 exports.CustomerPaymentInstrument = require('./customer/CustomerPaymentInstrument.js');
 exports.CustomerStatusCodes = require('./customer/CustomerStatusCodes.js');

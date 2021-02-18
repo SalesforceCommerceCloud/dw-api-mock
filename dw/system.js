@@ -1,4 +1,6 @@
 exports.AgentUserStatusCodes = require('./system/AgentUserStatusCodes.js');
+exports.Cache = require('./system/Cache.js');
+exports.CacheMgr = require('./system/CacheMgr.js');
 exports.JobProcessMonitor = require('./system/JobProcessMonitor.js');
 exports.OrganizationPreferences = require('./system/OrganizationPreferences.js');
 exports.Pipeline = require('./system/Pipeline.js');
