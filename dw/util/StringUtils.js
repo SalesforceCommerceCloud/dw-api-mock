@@ -1,6 +1,14 @@
 var StringUtils = function(){};
 
-StringUtils.format = function(){};
+StringUtils.format = function(pattern, params) {
+    params = Array.prototype.slice.call(arguments, 1);
+
+    params.forEach((param, idx) => {
+        pattern = pattern.replace(`{${idx}}`, param);
+    });
+
+    return pattern;
+};
 StringUtils.trim = function(){};
 StringUtils.truncate = function(){};
 StringUtils.encodeBase64 = function(){};

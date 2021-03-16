@@ -1,26 +1,51 @@
-var Customer = function(){};
+class Customer {
+    constructor(profile) {
+        this.ID = 'ID';
+        this.profile = profile || new (require('./Profile'))();
+    }
 
-Customer.prototype.isRegistered = function(){};
-Customer.prototype.getID = function(){};
-Customer.prototype.getCustomerGroups = function(){};
-Customer.prototype.getActiveData = function(){};
-Customer.prototype.isExternallyAuthenticated = function(){};
-Customer.prototype.isAuthenticated = function(){};
-Customer.prototype.getProfile = function(){};
-Customer.prototype.getOrderHistory = function(){};
-Customer.prototype.isMemberOfCustomerGroup = function(){};
-Customer.prototype.getProductLists = function(){};
-Customer.prototype.getAddressBook = function(){};
-Customer.prototype.getNote = function(){};
-Customer.prototype.setNote = function(){};
-Customer.prototype.isAnonymous = function(){};
-Customer.prototype.ID=null;
-Customer.prototype.customerGroups=null;
-Customer.prototype.activeData=null;
-Customer.prototype.profile=null;
-Customer.prototype.orderHistory=null;
-Customer.prototype.productLists=null;
-Customer.prototype.addressBook=null;
-Customer.prototype.note=null;
+    isRegistered () {
+        return this.registered;
+    }
+    getID () {
+        return this.ID;
+    }
+    getCustomerGroups () {
+        return this.customerGroups;
+    }
+    getActiveData () {
+        return this.activeData;
+    }
+    isExternallyAuthenticated () {
+        return this.externallyAuthenticated || false;
+    }
+    isAuthenticated () {
+        return this.authenticated || false;
+    }
+    getProfile () {
+        return this.profile;
+    }
+    getOrderHistory () {
+        return this.orderHistory;
+    }
+    isMemberOfCustomerGroup () {
+        return false;
+    }
+    getProductLists () {
+        return this.productLists;
+    }
+    getAddressBook () {
+        return this.profile && this.profile.getAddressBook() || this.addressBook;
+    }
+    getNote () {
+        return this.note;
+    }
+    setNote (note) {
+        this.note = note;
+    }
+    isAnonymous () {
+        return this.anonymous || false;
+    }
+}
 
 module.exports = Customer;

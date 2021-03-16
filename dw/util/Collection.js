@@ -1,9 +1,18 @@
-var Collection = function() {};
-Collection.prototype.remove = function(obj) {};
-Collection.prototype.size = function() {};
-Collection.prototype.isEmpty = function(){};
+module.exports = function() {
+	var _items = [];
 
-module.exports = Collection;
+	return {
+		remove: function(obj) {},
+		size: function() {},
+		isEmpty: function() {},
+		add: function(e) {
+			_items.push(e);
+		},
+		getLength: function () {
+			return _items.length;
+		},
+	};
+};
 
 /**
  * Supplements an existing JavaScript array with Demandware collection methods.

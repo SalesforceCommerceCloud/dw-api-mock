@@ -1,87 +1,162 @@
 var _super = require('./EncryptedObject');
 
-var Profile = function(){};
+class Profile extends _super {
+    constructor() {
+        super();
+        this.customerNo = '000001';
+        this.email = 'jdoe@salesforce.com';
+        this.addressBook = new (require('./AddressBook'))();
+        this.customer = new (require('./Customer'))(this);
+        this.wallet = new (require('./Wallet'))();
+    }
 
-Profile.prototype = new _super();
-
-Profile.prototype.getEmail = function(){};
-Profile.prototype.getFax = function(){};
-Profile.prototype.getTitle = function(){};
-Profile.prototype.getAddressBook = function(){};
-Profile.prototype.getCustomer = function(){};
-Profile.prototype.getCompanyName = function(){};
-Profile.prototype.setCompanyName = function(){};
-Profile.prototype.getFirstName = function(){};
-Profile.prototype.setFirstName = function(){};
-Profile.prototype.getJobTitle = function(){};
-Profile.prototype.setJobTitle = function(){};
-Profile.prototype.getLastName = function(){};
-Profile.prototype.setLastName = function(){};
-Profile.prototype.getSecondName = function(){};
-Profile.prototype.setSecondName = function(){};
-Profile.prototype.getSuffix = function(){};
-Profile.prototype.setSuffix = function(){};
-Profile.prototype.setTitle = function(){};
-Profile.prototype.getSalutation = function(){};
-Profile.prototype.setSaluation = function(){};
-Profile.prototype.setSalutation = function(){};
-Profile.prototype.getCredentials = function(){};
-Profile.prototype.getBirthday = function(){};
-Profile.prototype.setBirthday = function(){};
-Profile.prototype.getNextBirthday = function(){};
-Profile.prototype.getGender = function(){};
-Profile.prototype.setGender = function(){};
-Profile.prototype.isMale = function(){};
-Profile.prototype.isFemale = function(){};
-Profile.prototype.getPreferredLocale = function(){};
-Profile.prototype.setPreferredLocale = function(){};
-Profile.prototype.getPhoneHome = function(){};
-Profile.prototype.setPhoneHome = function(){};
-Profile.prototype.getPhoneBusiness = function(){};
-Profile.prototype.setPhoneBusiness = function(){};
-Profile.prototype.getPhoneMobile = function(){};
-Profile.prototype.setPhoneMobile = function(){};
-Profile.prototype.setFax = function(){};
-Profile.prototype.getLastLoginTime = function(){};
-Profile.prototype.getLastVisitTime = function(){};
-Profile.prototype.getPreviousLoginTime = function(){};
-Profile.prototype.getPreviousVisitTime = function(){};
-Profile.prototype.getTaxID = function(){};
-Profile.prototype.getTaxIDMasked = function(){};
-Profile.prototype.setTaxID = function(){};
-Profile.prototype.getTaxIDType = function(){};
-Profile.prototype.setEmail = function(){};
-Profile.prototype.getCustomerNo = function(){};
-Profile.prototype.setTaxIDType = function(){};
-Profile.prototype.getAddressBook = function(){}
-Profile.prototype.getWallet = function(){};
-Profile.prototype.email=null;
-Profile.prototype.fax=null;
-Profile.prototype.title=null;
-Profile.prototype.addressBook=null;
-Profile.prototype.customer=null;
-Profile.prototype.companyName=null;
-Profile.prototype.firstName=null;
-Profile.prototype.jobTitle=null;
-Profile.prototype.lastName=null;
-Profile.prototype.secondName=null;
-Profile.prototype.suffix=null;
-Profile.prototype.salutation=null;
-Profile.prototype.credentials=null;
-Profile.prototype.birthday=null;
-Profile.prototype.nextBirthday=null;
-Profile.prototype.gender=null;
-Profile.prototype.preferredLocale=null;
-Profile.prototype.phoneHome=null;
-Profile.prototype.phoneBusiness=null;
-Profile.prototype.phoneMobile=null;
-Profile.prototype.lastLoginTime=null;
-Profile.prototype.lastVisitTime=null;
-Profile.prototype.previousLoginTime=null;
-Profile.prototype.previousVisitTime=null;
-Profile.prototype.taxID=null;
-Profile.prototype.taxIDMasked=null;
-Profile.prototype.taxIDType=null;
-Profile.prototype.customerNo=null;
+    getEmail() {
+        return this.email;
+    }
+    setEmail(email) {
+        this.email = email;
+    }
+    getFax() {
+        return this.fax;
+    }
+    setFax(fax) {
+        this.fax = fax;
+    }
+    getTitle() {
+        return this.title;
+    }
+    setTitle(title) {
+        this.title = title;
+    }
+    getAddressBook() {
+        return this.addressBook;
+    }
+    getCustomer() {
+        return this.customer;
+    }
+    getCompanyName() {
+        return this.companyName;
+    }
+    setCompanyName(companyName) {
+        this.companyName = companyName;
+    }
+    getFirstName() {
+        return this.firstName;
+    }
+    setFirstName(firstName) {
+        this.firstName = firstName;
+    }
+    getJobTitle() {
+        return this.jobTitle;
+    }
+    setJobTitle(jobTitle) {
+        this.jobTitle = jobTitle;
+    }
+    getLastName() {
+        return this.lastName;
+    }
+    setLastName(lastName) {
+        this.lastName = lastName;
+    }
+    getSecondName() {
+        return this.secondName;
+    }
+    setSecondName(secondName) {
+        this.secondName = secondName;
+    }
+    getSuffix() {
+        return this.suffix;
+    }
+    setSuffix(suffix) {
+        this.suffix = suffix;
+    }
+    getSalutation() {
+        return this.salutation;
+    }
+    setSaluation(salutation) {
+        this.salutation = salutation;
+    }
+    getCredentials() {
+        return this.credentials;
+    }
+    getBirthday() {
+        return this.birthday;
+    }
+    setBirthday(birthday) {
+        this.birthday = birthday;
+    }
+    getNextBirthday() {
+        return this.nextBirthday;
+    }
+    getGender() {
+        return this.gender;
+    }
+    setGender(gender) {
+        this.gender = gender;
+    }
+    isMale() {
+        return this.gender === 1;
+    }
+    isFemale() {
+        return this.gender === 2;
+    }
+    getPreferredLocale() {
+        return this.preferredLocale;
+    }
+    setPreferredLocale(preferredLocale) {
+        this.preferredLocale = preferredLocale;
+    }
+    getPhoneHome() {
+        return this.phoneHome;
+    }
+    setPhoneHome(phoneHome) {
+        this.phoneHome = phoneHome;
+    }
+    getPhoneBusiness() {
+        return this.phoneBusiness;
+    }
+    setPhoneBusiness(phoneBusiness) {
+        this.phoneBusiness = phoneBusiness;
+    }
+    getPhoneMobile() {
+        return this.phoneMobile;
+    }
+    setPhoneMobile(phoneMobile) {
+        this.phoneMobile = phoneMobile;
+    }
+    getLastLoginTime() {
+        return this.lastLoginTime;
+    }
+    getLastVisitTime() {
+        return this.lastVisitTime;
+    }
+    getPreviousLoginTime() {
+        return this.previousLoginTime;
+    }
+    getPreviousVisitTime() {
+        return this.previousVisitTime;
+    }
+    getTaxID() {
+        return this.taxID;
+    }
+    getTaxIDMasked() {
+        return this.taxIDMasked;
+    }
+    setTaxID(taxID) {
+        this.taxID = taxID;
+    }
+    getTaxIDType() {
+        return this.taxIDType;
+    }
+    setTaxIDType(taxIDType) {
+        this.taxIDType = taxIDType;
+    }
+    getCustomerNo() {
+        return this.customerNo;
+    }
+    getWallet() {
+        return this.wallet;
+    }
+}
 
 module.exports = Profile;
