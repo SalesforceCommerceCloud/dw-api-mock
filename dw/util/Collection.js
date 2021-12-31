@@ -1,32 +1,24 @@
-module.exports = function() {
-	var _items = [];
+class Collection {
+	constructor(items) {
+		this.items = items || [];
+	}
 
-	return {
-		remove: function(obj) {},
-		size: function() {},
-		isEmpty: function() {},
-		add: function(e) {
-			_items.push(e);
-		},
-		getLength: function () {
-			return _items.length;
-		},
-	};
-};
+	remove(obj) {}
+	size() {}
+	isEmpty() {}
+	add(e) {
+		this.items.push(e);
+	}
+	getLength() {
+		return this.items.length;
+	}
+	toArray() {
+		return this.items;
+	}
 
-/**
- * Supplements an existing JavaScript array with Demandware collection methods.
- * This is useful when you have a unit test where the method you're testing
- * expects a Demandware collection.
- */
-module.exports.createFromArray = function(arr) {
-	arr.size = function() {
-		return arr.length;
-	};
+	createFromArray = function(arr) {
+		return new Collection(arr);
+	}
+}
 
-	arr.remove = function(obj) {
-		arr.splice(arr.indexOf(obj), 1);
-	};
-
-	return arr;
-};
+module.exports = Collection;
