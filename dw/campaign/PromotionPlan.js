@@ -1,21 +1,18 @@
-var PromotionPlan = function(){};
+class PromotionPlan {
+    constructor(promotions) {
+        var Collection = require('../util/Collection');
+        this.promotions = new Collection (promotions || []);
+    }
 
-PromotionPlan.prototype.getPromotions = function(){};
-PromotionPlan.prototype.getOrderPromotions = function(){};
-PromotionPlan.prototype.getShippingPromotions = function(){};
-PromotionPlan.prototype.removePromotion = function(){};
-PromotionPlan.prototype.getProductPromotionsForQualifyingProduct = function(){};
-PromotionPlan.prototype.getProductPromotionsForDiscountedProduct = function(){};
-PromotionPlan.prototype.getPaymentMethodPromotions = function(){};
-PromotionPlan.prototype.getPaymentCardPromotions = function(){};
-PromotionPlan.prototype.getProductPromotions = function(){};
-PromotionPlan.prototype.promotions=null;
-PromotionPlan.prototype.orderPromotions=null;
-PromotionPlan.prototype.shippingPromotions=null;
-PromotionPlan.prototype.productPromotionsForQualifyingProduct=null;
-PromotionPlan.prototype.productPromotionsForDiscountedProduct=null;
-PromotionPlan.prototype.paymentMethodPromotions=null;
-PromotionPlan.prototype.paymentCardPromotions=null;
-PromotionPlan.prototype.productPromotions=null;
+    getPromotions() { return this.promotions; }
+    getOrderPromotions() { return this.promotions; }
+    getShippingPromotions() { return this.promotions; }
+    removePromotion() {}
+    getProductPromotionsForQualifyingProduct() { return this.promotions; };
+    getProductPromotionsForDiscountedProduct() { return this.promotions; };
+    getPaymentMethodPromotions() { return this.promotions; };
+    getPaymentCardPromotions() { return this.promotions; };
+    getProductPromotions() { return this.promotions; }
+}
 
 module.exports = PromotionPlan;
