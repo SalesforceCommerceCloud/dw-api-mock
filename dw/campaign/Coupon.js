@@ -1,27 +1,32 @@
-var _super = require('../object/PersistentObject');
+const PersistentObject = require('../object/PersistentObject');
 
-var Coupon = function(){};
+class Coupon extends PersistentObject {
+    constructor() {
+        super();
+        var Collection = require('../util/Collection');
 
-Coupon.prototype = new _super();
+        this.type = null;
+        this.ID = null;
+        this.enabled = false;
+        this.promotions = new Collection();
+        this.codePrefix = null;
+        this.redemptionLimitPerCode = null;
+        this.redemptionLimitPerCustomer = null;
+        this.redemptionLimitPerTimeFrame = null;
+        this.redemptionLimitTimeFrame = null;
+        this.nextCouponCode = null;
+    }
 
-Coupon.prototype.getType = function(){};
-Coupon.prototype.getID = function(){};
-Coupon.prototype.isEnabled = function(){};
-Coupon.prototype.getPromotions = function(){};
-Coupon.prototype.getCodePrefix = function(){};
-Coupon.prototype.getRedemptionLimitPerCode = function(){};
-Coupon.prototype.getRedemptionLimitPerCustomer = function(){};
-Coupon.prototype.getRedemptionLimitPerTimeFrame = function(){};
-Coupon.prototype.getRedemptionLimitTimeFrame = function(){};
-Coupon.prototype.getNextCouponCode = function(){};
-Coupon.prototype.type=null;
-Coupon.prototype.ID=null;
-Coupon.prototype.promotions=null;
-Coupon.prototype.codePrefix=null;
-Coupon.prototype.redemptionLimitPerCode=null;
-Coupon.prototype.redemptionLimitPerCustomer=null;
-Coupon.prototype.redemptionLimitPerTimeFrame=null;
-Coupon.prototype.redemptionLimitTimeFrame=null;
-Coupon.prototype.nextCouponCode=null;
+    getType() { return this.type; };
+    getID() { return this.ID; };
+    isEnabled(){ return this.enabled; };
+    getPromotions() { return this.promotions; };
+    getCodePrefix() { return this.codePrefix; };
+    getRedemptionLimitPerCode() { return this.redemptionLimitPerCode; };
+    getRedemptionLimitPerCustomer() { return this.redemptionLimitPerCustomer; };
+    getRedemptionLimitPerTimeFrame() { return this.redemptionLimitPerTimeFrame; };
+    getRedemptionLimitTimeFrame() { return this.redemptionLimitTimeFrame; };
+    getNextCouponCode() { return this.nextCouponCode; };
+}
 
 module.exports = Coupon;
