@@ -4,8 +4,12 @@ class Collection {
 	}
 
 	remove(obj) {}
-	size() {}
-	isEmpty() {}
+	size() {
+		return this.items.length;
+	}
+	isEmpty() {
+		return this.items.length === 0;
+	}
 	add(e) {
 		this.items.push(e);
 	}
