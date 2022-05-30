@@ -18,6 +18,7 @@ CustomerMgr.getExternallyAuthenticatedCustomerProfile = function(){};
 CustomerMgr.loginExternallyAuthenticatedCustomer = function(){};
 CustomerMgr.getCustomerByCustomerNumber = function(){};
 CustomerMgr.createCustomer = function() {};
+CustomerMgr.logoutCustomer = function() {};
 CustomerMgr.getSiteCustomerList = () => customerList;
 CustomerMgr.prototype.customerGroups=null;
 CustomerMgr.prototype.profile=null;
