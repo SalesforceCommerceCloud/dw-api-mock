@@ -14,7 +14,7 @@ class LocalServiceRegistry {
 
         if (serviceId.toLowerCase().indexOf('http') > -1) {
             return new HTTPService(configObj);
-        } else if (serviceId.toLowerCase().indexOf('httpForm') > -1) {
+        } else if (serviceId.toLowerCase().indexOf('httpform') > -1) {
             return new HTTPFormService(configObj);
         } else if (serviceId.toLowerCase().indexOf('soap') > -1) {
             return new SOAPService(configObj);
