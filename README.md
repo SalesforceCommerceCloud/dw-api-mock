@@ -1,3 +1,18 @@
+> ## ⚠️ Security notice
+>
+> This GitHub repository is **not** malicious and is safe to use. However, a bad actor
+> published a **separate, malicious** package also named `dw-api-mock` to the public npm
+> registry. That package — not this repository — is the subject of GitHub Advisory
+> [GHSA-2xr6-47f3-hjmf](https://github.com/advisories/GHSA-2xr6-47f3-hjmf).
+>
+> - ✅ Install this project from GitHub only:
+>   `"dw-api-mock": "git+ssh://github.com/SalesforceCommerceCloud/dw-api-mock.git"`
+> - ❌ Never run `npm install dw-api-mock` or use a registry version like `"^1.0.0"` —
+>   that pulls the malicious package from npmjs.com.
+>
+> If your organization installed the npm package, notify your security team and rotate
+> secrets immediately from a clean machine. See [SECURITY.md](./SECURITY.md) for details.
+
 DW MOCK API
 ===========
 
