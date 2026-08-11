@@ -6,7 +6,7 @@
 > [GHSA-2xr6-47f3-hjmf](https://github.com/advisories/GHSA-2xr6-47f3-hjmf).
 >
 > - ✅ Install this project from GitHub only:
->   `"dw-api-mock": "git+ssh://github.com/SalesforceCommerceCloud/dw-api-mock.git"`
+>   `"@salesforce/dw-api-mock": "git+ssh://github.com/SalesforceCommerceCloud/dw-api-mock.git"`
 > - ❌ Never run `npm install dw-api-mock` or use a registry version like `"^1.0.0"` —
 >   that pulls the malicious package from npmjs.com.
 >
@@ -46,7 +46,7 @@ var proxyquire = require('proxyquire').noCallThru();
 chai.use(sinonChai);
 
 require.extensions['.ds'] = require.extensions['.js'];
-require('dw-api-mock/demandware-globals');
+require('@salesforce/dw-api-mock/demandware-globals');
 
 // add cartridges dir as module lookup location, the app-module-path package lets you do this nicely
 require('app-module-path').addPath(process.cwd() + '/cartridges');
@@ -83,7 +83,7 @@ Sample package.json
   "devDependencies": {
     "app-module-path": "^1.0.4",
     "chai": "^3.4.1",
-    "dw-api-mock": "git+ssh://github.com/SalesforceCommerceCloud/dw-api-mock.git",
+    "@salesforce/dw-api-mock": "git+ssh://github.com/SalesforceCommerceCloud/dw-api-mock.git",
     "istanbul": "^0.4.1",
     "mocha": "^2.3.4",
     "proxyquire": "^1.7.3",

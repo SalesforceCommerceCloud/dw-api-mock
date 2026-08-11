@@ -20,9 +20,12 @@ Depend on this project from GitHub, never from the public npm registry:
 
 ```json
 "devDependencies": {
-  "dw-api-mock": "git+ssh://github.com/SalesforceCommerceCloud/dw-api-mock.git"
+  "@salesforce/dw-api-mock": "git+ssh://github.com/SalesforceCommerceCloud/dw-api-mock.git"
 }
 ```
+
+The scoped `@salesforce/` name is owned by Salesforce on npmjs.com, so a third party
+cannot publish into it.
 
 ❌ Do **not** run `npm install dw-api-mock` and do **not** add a registry version such
 as `"dw-api-mock": "^1.0.0"` — either of those resolves the malicious package from

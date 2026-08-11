@@ -1,5 +1,5 @@
 {
-  "name": "dw-api-mock",
+  "name": "@salesforce/dw-api-mock",
   "description": "Demandware API mock making unit testing via rapunzel possible",
   "version": "0.0.9",
   "private": true,
