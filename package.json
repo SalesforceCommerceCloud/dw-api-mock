@@ -1,7 +1,7 @@
 {
   "name": "@salesforce/dw-api-mock",
   "description": "Demandware API mock making unit testing via rapunzel possible",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "license": "Demandware Community License",
   "dependencies": {
