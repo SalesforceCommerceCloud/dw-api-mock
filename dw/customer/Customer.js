@@ -2,6 +2,7 @@ class Customer {
     constructor(profile) {
         this.ID = 'ID';
         this.profile = profile || new (require('./Profile'))();
+        this.AuthenticationStatus = require('./AuthenticationStatus');
     }
 
     isRegistered () {
